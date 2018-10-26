@@ -1,0 +1,24 @@
+{
+  "name": "Praktyczne-wykorzystanie-szablonow",
+  "version": "1.0.0",
+  "description": "```sh\r $ npm install\r ```",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kolumbryna22/Praktyczne-wykorzystanie-szablonow.git"
+  },
+  "author": "Dominik Wilusz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kolumbryna22/Praktyczne-wykorzystanie-szablonow/issues"
+  },
+  "homepage": "https://github.com/Kolumbryna22/Praktyczne-wykorzystanie-szablonow#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5"
+  }
+}
