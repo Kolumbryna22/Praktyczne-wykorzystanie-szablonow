@@ -1,0 +1,12 @@
+doctype html
+html
+head
+    title="Login"
+body
+    form(action="http://localhost:3000/home", method="get")
+        h2 Login to account
+        p First Name:
+        input#firstName(type="text", name="firstName")
+        p Last Name:
+        input#lastName(type="text", name="lastName")
+        button(type="submit") Login

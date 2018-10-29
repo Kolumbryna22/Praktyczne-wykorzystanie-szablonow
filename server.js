@@ -14,7 +14,7 @@ app.use('/store', function(req, res, next){
 // app
 
 app.get('/', function (req, res) {
-    res.send('Hello world!');
+    res.send('To login into app go to localhost:3000/login');
 });
 
 app.get('/store', function (req, res) {
@@ -23,6 +23,19 @@ app.get('/store', function (req, res) {
 
 app.get('/first-template', function(req, res) {
     res.render('first-template');
+});
+
+app.get('/login', function(req, res) {
+    res.render('login-template');
+});
+
+app.get('/home', function(req, res) {
+    const response = {
+        firstName: req.query.firstName,
+        lastName: req.query.lastName
+    };
+
+    res.end(JSON.stringify(response));
 });
 
 app.listen(3000);
